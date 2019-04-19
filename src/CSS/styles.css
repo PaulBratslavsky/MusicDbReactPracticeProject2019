@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #302929;
+  font-family: 'Roboto', sans-serif; 
+}
+
+body {
+  margin: 0 auto;
+
+  max-width: 980px;
+  min-width: 320px;
+
+  background: #ff9100;
+  color: #302929;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

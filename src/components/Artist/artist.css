@@ -1,0 +1,5 @@
+.avatar .avatar-image {
+  height: 400px;
+  background-size: cover !important;
+  background-position: center center;
+}
