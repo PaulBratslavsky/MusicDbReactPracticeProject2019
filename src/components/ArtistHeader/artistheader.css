@@ -1,0 +1,38 @@
+.artist-header {
+  background: #ff9100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-header-link {
+  font-family: 'Monoton', cursive;
+  font-size: 2.5rem;
+
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.artist-header-border {
+  display: block;
+  height: 20px;
+  background: #302929;
+}
+
+.artist-bio {
+  padding: 1rem;
+}
+
+.artist-bio-name {
+
+  display: inline-block;
+  margin: 0;
+  padding: 1rem;
+  background: #2196F3;
+  color: white;
+}
+
+.artist-bio-text {
+  font-size: 1.2rem;
+}
+

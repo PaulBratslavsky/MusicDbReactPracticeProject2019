@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="banner">
       <div className="main-cover">
         <div className="logo">
-          MUSIC-DB
+          MUSIC DB
         </div>
       </div>
       <span className="main-cover-border"></span>

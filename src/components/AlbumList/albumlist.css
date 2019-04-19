@@ -1,0 +1,14 @@
+.albums-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.albums-list-image {
+  width: 150px;
+  height: 150px;
+}

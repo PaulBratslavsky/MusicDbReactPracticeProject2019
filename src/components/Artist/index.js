@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
-import AritstHeader from '../ArtistHeader';
 
 // CSS
 import './artist.css';
+
+// COMPONENTS
+import AritstHeader from '../ArtistHeader';
+import AlbumList from '../AlbumList';
+
 const REQ_URL = 'http://localhost:3000/artists';
 
 class Artist extends Component {
@@ -30,22 +34,26 @@ class Artist extends Component {
 
 
   render() {
-
-    console.log(this.state.artist, 'Single artist state');
-
+    
     return (
       <div>
         <AritstHeader />
-        <div className="artist-bio">
+
+        <span className="artist-header-border"></span>
           <div className="avatar">
             <div className="avatar-image" style={{backgroundImage: `url(../../images/covers/${this.state.artist.cover}.jpg)`}}></div>
           </div>
+        <span className="artist-header-border"></span>
+
           <div className="artist-bio">
-            <h3>{this.state.artist.name}</h3>
-            <p>{this.state.artist.bio}</p>
+            <h3 className="artist-bio-name">{this.state.artist.name}</h3>
+            <p className="artist-bio-text">{this.state.artist.bio}</p>
           </div>
+
+          <AlbumList albums={this.state.artist.albums} />
+
+
         </div>
-      </div>
     )
   }
   
